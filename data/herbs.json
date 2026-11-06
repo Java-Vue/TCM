@@ -6138,64 +6138,6 @@
             ]
           }
         ]
-      },
-      {
-        "id": "test",
-        "title": "test",
-        "subtitle": "adaesas",
-        "category": "解表药",
-        "tags": [
-          "sdf"
-        ],
-        "meta": [
-          {
-            "label": "性味归经",
-            "value": "fdgdfg"
-          },
-          {
-            "label": "功效",
-            "value": "dfgfd"
-          },
-          {
-            "label": "主治",
-            "value": "fdg"
-          },
-          {
-            "label": "用法用量",
-            "value": "dfg"
-          },
-          {
-            "label": "使用注意",
-            "value": "dfg"
-          }
-        ],
-        "summary": "serfseftsdfsd",
-        "blocks": [
-          {
-            "type": "table",
-            "caption": "",
-            "head": [
-              "配伍",
-              "作用"
-            ],
-            "rows": [
-              [
-                "",
-                ""
-              ]
-            ]
-          },
-          {
-            "type": "callout",
-            "variant": "warning",
-            "title": "使用注意",
-            "text": ""
-          }
-        ],
-        "addedAt": "2026-11-06T06:20:01.326Z",
-        "image": "",
-        "imageHint": "te",
-        "updatedAt": "2026-11-06T06:20:34.612Z"
       }
     ]
   }
