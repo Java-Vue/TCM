@@ -1,0 +1,303 @@
+{
+  "site": {
+    "mark": "岐黃",
+    "name": "岐黄翰墨",
+    "subtitle": "中华医药传统知识库",
+    "description": "汇集中医基础理论、{classics}部传世典籍、{herbs}味常用中药、{formulas}首经典方剂、针灸经络、食疗养生、{solar}节气与{constitution}种体质辨识，以及{diseases}个常见病种的辨证论治与调护方案。",
+    "author": "岐黄翰墨编辑组",
+    "keywords": [
+      "中医药",
+      "中医基础理论",
+      "中医经典",
+      "中药功效",
+      "方剂",
+      "针灸经络",
+      "食疗养生",
+      "二十四节气",
+      "体质辨识"
+    ],
+    "repo": "",
+    "startYear": 2026
+  },
+  "nav": [
+    {
+      "key": "home",
+      "title": "首页",
+      "href": "index.html",
+      "icon": "fa fa-home"
+    },
+    {
+      "key": "theory",
+      "title": "理论基础",
+      "href": "theory.html",
+      "icon": "fa fa-book"
+    },
+    {
+      "key": "classics",
+      "title": "经典医籍",
+      "href": "classics.html",
+      "icon": "fa fa-scroll"
+    },
+    {
+      "key": "herbs",
+      "title": "本草图鉴",
+      "href": "herbs.html",
+      "icon": "fa fa-leaf"
+    },
+    {
+      "key": "formulas",
+      "title": "方剂大成",
+      "href": "formulas.html",
+      "icon": "fa fa-flask"
+    },
+    {
+      "key": "acupuncture",
+      "title": "针灸经络",
+      "href": "acupuncture.html",
+      "icon": "fa fa-mountain"
+    },
+    {
+      "key": "diet",
+      "title": "养生食疗",
+      "href": "diet.html",
+      "icon": "fa fa-mortar-pestle"
+    },
+    {
+      "key": "solar",
+      "title": "节气养生",
+      "href": "solar.html",
+      "icon": "fa fa-sun"
+    },
+    {
+      "key": "constitution",
+      "title": "体质辨识",
+      "href": "constitution.html",
+      "icon": "fa fa-id-card"
+    },
+    {
+      "key": "diseases",
+      "title": "疾病调理",
+      "href": "diseases.html",
+      "icon": "fa fa-heartbeat"
+    },
+    {
+      "key": "about",
+      "title": "关于本站",
+      "href": "about.html",
+      "icon": "fa fa-info-circle"
+    }
+  ],
+  "sidebar": {
+    "intro": "本站以《黄帝内经》《伤寒论》《本草纲目》等传世典籍为源，整理中医药基础理论、药物方剂、针灸经络与养生调护知识，供学习与查阅参考。",
+    "stat": [
+      {
+        "label": "典籍",
+        "value": "19",
+        "board": "classics"
+      },
+      {
+        "label": "药材",
+        "value": "60",
+        "board": "herbs"
+      },
+      {
+        "label": "方剂",
+        "value": "36",
+        "board": "formulas"
+      },
+      {
+        "label": "病种",
+        "value": "28",
+        "board": "diseases"
+      },
+      {
+        "label": "节气",
+        "value": "24",
+        "board": "solar"
+      },
+      {
+        "label": "体质",
+        "value": "9",
+        "board": "constitution"
+      }
+    ],
+    "topics": [
+      {
+        "title": "基础与典籍",
+        "items": [
+          {
+            "title": "中医基础理论",
+            "href": "theory.html",
+            "count": "11 章",
+            "board": "theory"
+          },
+          {
+            "title": "经典医籍",
+            "href": "classics.html",
+            "count": "19 部",
+            "board": "classics"
+          },
+          {
+            "title": "针灸经络",
+            "href": "acupuncture.html",
+            "count": "8 章",
+            "board": "acupuncture"
+          }
+        ]
+      },
+      {
+        "title": "药物与方剂",
+        "items": [
+          {
+            "title": "本草图鉴",
+            "href": "herbs.html",
+            "count": "60 味",
+            "board": "herbs"
+          },
+          {
+            "title": "方剂大成",
+            "href": "formulas.html",
+            "count": "36 首",
+            "board": "formulas"
+          }
+        ]
+      },
+      {
+        "title": "养生与临床",
+        "items": [
+          {
+            "title": "养生食疗",
+            "href": "diet.html",
+            "count": "36 道",
+            "board": "diet"
+          },
+          {
+            "title": "二十四节气",
+            "href": "solar.html",
+            "count": "24 节",
+            "board": "solar"
+          },
+          {
+            "title": "九种体质",
+            "href": "constitution.html",
+            "count": "9 种",
+            "board": "constitution"
+          },
+          {
+            "title": "常见病调理",
+            "href": "diseases.html",
+            "count": "28 病",
+            "board": "diseases"
+          }
+        ]
+      }
+    ],
+    "links": [
+      {
+        "title": "国家中医药管理局",
+        "href": "http://www.natcm.gov.cn/",
+        "external": true,
+        "icon": "fa fa-link"
+      },
+      {
+        "title": "中国哲学书电子化计划",
+        "href": "https://ctext.org/zh",
+        "external": true,
+        "icon": "fa fa-link"
+      },
+      {
+        "title": "中国知网",
+        "href": "https://www.cnki.net/",
+        "external": true,
+        "icon": "fa fa-link"
+      }
+    ]
+  },
+  "footer": {
+    "note": "免责声明：本站内容整理自中医经典文献与公开教材资料，仅供传统医学知识学习与文化传承参考，不构成任何医疗诊断或治疗建议。药物剂量、针灸操作与食疗方案均须由执业医师结合个体情况辨证确定；身体不适请及时就医，切勿自行用药。",
+    "links": [
+      {
+        "title": "中医基础理论",
+        "href": "theory.html"
+      },
+      {
+        "title": "经典医籍",
+        "href": "classics.html"
+      },
+      {
+        "title": "本草图鉴",
+        "href": "herbs.html"
+      },
+      {
+        "title": "方剂大成",
+        "href": "formulas.html"
+      },
+      {
+        "title": "针灸经络",
+        "href": "acupuncture.html"
+      },
+      {
+        "title": "养生食疗",
+        "href": "diet.html"
+      },
+      {
+        "title": "节气养生",
+        "href": "solar.html"
+      },
+      {
+        "title": "体质辨识",
+        "href": "constitution.html"
+      },
+      {
+        "title": "疾病调理",
+        "href": "diseases.html"
+      },
+      {
+        "title": "关于本站",
+        "href": "about.html"
+      }
+    ]
+  },
+  "disclaimer": "本站内容仅供传统医学知识学习参考，不构成诊疗建议。",
+  "stats": {
+    "theory": {
+      "unit": "章"
+    },
+    "classics": {
+      "unit": "部"
+    },
+    "herbs": {
+      "unit": "味"
+    },
+    "formulas": {
+      "unit": "首"
+    },
+    "acupuncture": {
+      "unit": "章"
+    },
+    "diet": {
+      "unit": "道"
+    },
+    "solar": {
+      "unit": "节"
+    },
+    "constitution": {
+      "unit": "种",
+      "count": 9
+    },
+    "diseases": {
+      "unit": "病"
+    }
+  },
+  "modules": {
+    "theory": "阴阳五行、藏象、气血津液、经络、病因病机与辨证论治",
+    "classics": "{count}部传世典籍：《黄帝内经》《伤寒论》《本草纲目》等",
+    "herbs": "{count}味常用中药的性味归经、功效主治、配伍与使用注意",
+    "formulas": "{count}首经典方剂的组成、方义、加减化裁与临床应用",
+    "acupuncture": "十二经脉、奇经八脉、腧穴主治与针刺灸法操作",
+    "diet": "药膳食谱、食材宜忌与按体质、按季节的调养方案",
+    "solar": "{count}节气气候物候、起居饮食、导引保健与易发疾病",
+    "constitution": "{count}种中医体质的形神特征、易病倾向与调养方案",
+    "diseases": "{count}个常见病种的辨证分型、方药、外治与调护"
+  }
+}

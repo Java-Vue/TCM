@@ -1,0 +1,25 @@
+{
+  "name": "tcm-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "岐黄翰墨 · 中医药主题静态知识库（内容与样式分离，JSON 数据驱动，可直接部署 GitHub Pages）",
+  "keywords": [
+    "tcm",
+    "traditional-chinese-medicine",
+    "static-site",
+    "github-pages"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "node tools/build-data.js",
+    "check": "node tools/build-data.js --check",
+    "pages": "node tools/gen-pages.js",
+    "serve": "node tools/serve.js",
+    "start": "node tools/serve.js",
+    "dev": "node tools/build-data.js && node tools/gen-pages.js && node tools/serve.js",
+    "prepublish": "node tools/build-data.js && node tools/gen-pages.js"
+  },
+  "engines": {
+    "node": ">=14"
+  }
+}

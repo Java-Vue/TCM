@@ -1,0 +1,69 @@
+{
+  "generatedAt": "2026-11-06T02:34:55.633Z",
+  "totals": {
+    "entries": 237,
+    "chars": 486727
+  },
+  "boards": {
+    "theory": {
+      "count": 11,
+      "raw": 11,
+      "unit": "章",
+      "type": "section"
+    },
+    "classics": {
+      "count": 19,
+      "raw": 19,
+      "unit": "部",
+      "type": "collection"
+    },
+    "herbs": {
+      "count": 60,
+      "raw": 60,
+      "unit": "味",
+      "type": "collection"
+    },
+    "formulas": {
+      "count": 36,
+      "raw": 36,
+      "unit": "首",
+      "type": "collection"
+    },
+    "acupuncture": {
+      "count": 8,
+      "raw": 8,
+      "unit": "章",
+      "type": "section"
+    },
+    "diet": {
+      "count": 36,
+      "raw": 36,
+      "unit": "道",
+      "type": "collection"
+    },
+    "solar": {
+      "count": 24,
+      "raw": 24,
+      "unit": "节",
+      "type": "section"
+    },
+    "constitution": {
+      "count": 9,
+      "raw": 10,
+      "unit": "种",
+      "type": "section"
+    },
+    "diseases": {
+      "count": 28,
+      "raw": 28,
+      "unit": "病",
+      "type": "collection"
+    },
+    "about": {
+      "count": 5,
+      "raw": 5,
+      "unit": "章",
+      "type": "section"
+    }
+  }
+}
