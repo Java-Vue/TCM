@@ -65,6 +65,9 @@ const ALLOWED_DATA = new Set([
   'acupuncture', 'diet', 'solar', 'constitution', 'diseases', 'about'
 ]);
 
+// 可读取但不允许直接写入的文件（stats.json 由构建脚本生成）
+const ALLOWED_READ_ONLY = new Set(['stats']);
+
 /* ------------------------------------------------------------------ */
 /* 安全校验                                                            */
 /* ------------------------------------------------------------------ */
@@ -344,7 +347,7 @@ function handleRequest(req, res, pathname) {
     if (req.method === 'GET') {
       const name = pathname.replace(/^\/api\/data\//, '').replace(/\.json$/, '');
       const f = path.join(DATA_DIR, name + '.json');
-      if (!ALLOWED_DATA.has(name) || !fs.existsSync(f)) {
+      if ((!ALLOWED_DATA.has(name) && !ALLOWED_READ_ONLY.has(name)) || !fs.existsSync(f)) {
         return json(res, 404, { ok: false, error: '文件不存在' });
       }
       return json(res, 200, JSON.parse(fs.readFileSync(f, 'utf8')));

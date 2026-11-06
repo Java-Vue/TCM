@@ -25,12 +25,14 @@
     return b && b[name] ? b[name] : null;
   }
 
-  function fetchJSON(name) {
+  function fetchJSON(name, fresh) {
     // file:// 协议下 fetch 会被浏览器 CORS 策略拦截，直接跳过以免产生控制台报错
     if (global.location && global.location.protocol === 'file:') {
       return Promise.reject(new Error('file:// 协议不支持 fetch，改用预构建包'));
     }
-    return fetch('data/' + name + '.json', { cache: 'no-cache' })
+    // fresh=true 时附加时间戳并强制重新下载，确保统计数字绝不读到缓存
+    var url = 'data/' + name + '.json' + (fresh ? ('?_=' + Date.now()) : '');
+    return fetch(url, { cache: fresh ? 'reload' : 'no-cache' })
       .then(function (res) {
         if (!res.ok) throw new Error('HTTP ' + res.status + ' ' + name + '.json');
         return res.json();
@@ -42,10 +44,10 @@
    * @param {string} name  不含扩展名的文件名，如 'herbs'
    * @returns {Promise<object>}
    */
-  function load(name) {
-    if (cache[name]) return Promise.resolve(cache[name]);
+  function load(name, fresh) {
+    if (!fresh && cache[name]) return Promise.resolve(cache[name]);
 
-    return fetchJSON(name)
+    return fetchJSON(name, fresh)
       .then(function (data) {
         cache[name] = data;
         return data;
@@ -69,7 +71,8 @@
     names = names && names.length ? names : DATA_FILES;
     return Promise.all(
       names.map(function (n) {
-        return load(n).catch(function (err) {
+        // stats 每次都强制重新下载，避免浏览器缓存导致数字停在旧值
+        return load(n, n === 'stats').catch(function (err) {
           return { __error: err.message };
         });
       })
